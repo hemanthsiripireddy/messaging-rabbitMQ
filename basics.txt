@@ -1,0 +1,32 @@
+--RabbitMQ is used for asynchronous communication
+--it is needed when synchronous communication chrases system
+--Advanced structures for messages to flow through such as
+	Queues
+	Topics
+	Channels
+	Exchanges
+	and more
+--types of protocols
+STOMP: Simple Text Oriented Messaging protocol 
+MQTT: Message Queue Telemetry Transport
+AMQP: Advanced Message Queueing protocol 
+	--Reliable and interoperable
+	--AMQP solutions from different vendors does work which is where other protocols failed
+	--provides a wide range of features related to messaging, including reliable queueing, topic based subscribe public subscribe messaging, flexible routing, transaction, security 
+	--AMQP solves the technical part of connecting applications
+Advantages of AMQP
+-> want a real time feed of constantly updating information
+->want your message to be delivered when destination comes online
+->want things to  work on all popular operating systems and programming languages
+publisher-> exchange->queue->subscriber
+
+Types of Exchange
+--direct
+--fanout
+--topic
+--headers
+
+bindings simply used to bind exchanges to  queues for message delivery 
+
+properties of queues:
+durable, exclusive auto delete
